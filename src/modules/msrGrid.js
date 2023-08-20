@@ -1,5 +1,5 @@
-import getPixabayImages from './pixabay';
-import showOnScroll from './showOnScroll';
+import getPixabayImages from '../modulesTs/pixabay';
+import showOnScroll from '../modulesTs/showOnScroll';
 
 const appendGrid = async () => {
   const grid = document.querySelector('.msr-grid');
@@ -10,11 +10,24 @@ const appendGrid = async () => {
 
   const newElems = [];
 
-  gridItems.forEach((imageUrl) => {
+  gridItems.forEach((imageUrl, arrayImgID) => {
     const gridItem = document.createElement('img');
     
     gridItem.src = imageUrl;
     gridItem.classList.add('msr-item');
+    
+    gridItem.addEventListener('click', () => {
+      const imgID = document.querySelector('.msr-grid').childElementCount + arrayImgID - 21;
+      const popup = document.querySelector('#gallery-popup');
+      const popupImg = popup.querySelector('#popup-image');
+      const imgDesc = popup.querySelector('#image-description');
+
+      popup.classList.remove('hidden');
+      popupImg.src = gridItem.src;
+
+      imgDesc.innerHTML = (imgID).toString().concat(' / ').concat((document.querySelector('.msr-grid').childElementCount - 2));
+      popup.dataset.imgId = imgID - 1;
+    });
     
     grid.append(gridItem);
     newElems.push(gridItem);

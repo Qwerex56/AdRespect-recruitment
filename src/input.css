@@ -24,7 +24,7 @@
 }
 
 .msr-item:hover {
-  box-shadow: 0 0 0.5rem 0.125rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0.5rem 0.125rem rgba(235, 235, 235, 0.877);
 }
 
 .show-msr-item {

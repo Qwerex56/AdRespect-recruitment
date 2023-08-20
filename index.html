@@ -10,11 +10,11 @@
   <script src="./node_modules/masonry-layout/dist/masonry.pkgd.min.js"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>adRespect</title>
+  <title>adRespect Recruitment task</title>
 </head>
 
-<body class="bg-ar-bg-main">
-  <header class="duration-300 max-w-full flex flex-col fixed w-full z-10 items-center align-middle px-4 py-6 gap-5 bg-ar-bg-navbar tablet-xl:flex-row tablet-xl:items-center tablet-xl:justify-between tablet-xl:px-[5.625rem] tablet-xl:py-6 ">
+<body class="bg-ar-bg-main overflow-x-hidden">
+  <header class="duration-300 max-w-full flex flex-col sticky top-0 w-full z-10 items-center align-middle px-4 py-6 gap-5 bg-ar-bg-navbar tablet-xl:flex-row tablet-xl:items-center tablet-xl:justify-between tablet-xl:px-[5.625rem] tablet-xl:py-6 ">
     <img class="w-32 self-start" src="/src/images/giarddesignLogo.svg" alt="giardDesign" />
     <nav class=" flex flex-row gap-6 text-xs phone-lg:text-base">
       <div class="group/unfold-menu relative">
@@ -26,15 +26,15 @@
             <li class="py-3 px-2 text-sm border-b-[1px] border-b-slate-100 bg-white hover:bg-slate-50"><a
                 class="hover:text-ar-green relative inline-block 
                 after:absolute after:w-full after:h-[2px] after:rounded-full after:bg-ar-green after:bottom-0 after:left-0 after:scale-0 hover:after:scale-100 after:ease-linear after:duration-100"
-                href="#ProjektyCard">Projeky</a></li>
+                href="#Oferta">Projeky</a></li>
             <li class="py-3 px-2 text-sm border-b-[1px] border-b-slate-100 bg-white hover:bg-slate-50"><a
                 class="hover:text-ar-green relative inline-block 
                 after:absolute after:w-full after:h-[2px] after:rounded-full after:bg-ar-green after:bottom-0 after:left-0 after:scale-0 hover:after:scale-100 after:ease-linear after:duration-100"
-                href="#RealizacjeCard">Realizacje</a></li>
+                href="#Oferta">Realizacje</a></li>
             <li class="py-3 px-2 text-sm bg-white hover:bg-slate-50"><a
                 class="hover:text-ar-green relative inline-block 
                 after:absolute after:w-full after:h-[2px] after:rounded-full after:bg-ar-green after:bottom-0 after:left-0 after:scale-0 hover:after:scale-100 after:ease-linear after:duration-100"
-                href="#WizualizacjeCard">Wizualizacje</a></li>
+                href="#Oferta">Wizualizacje</a></li>
           </ul>
         </div>
       </div>
@@ -56,7 +56,7 @@
     </nav>
   </header>
 
-  <main class="pt-28">
+  <main class="relative snap-start">
     <!-- Intro -->
     <section id="Intro" class="relative flex flex-col bg-ar-beige mb-16 tablet-lg:flex-row tablet-lg:items-center laptop:mb-[7.5rem] laptop-lg:gap-4">
       <article class="px-8 py-12 tablet:max-w-[80%] tablet-lg:pr-0 laptop:max-w-[50%] laptop-lg:pl-[5.625rem]">
@@ -80,20 +80,20 @@
       </article>
       <div class="h-[100vw] swiper w-full tablet-lg:h-[50vw]">
         <div class="swiper-wrapper swiper-horizontal">
-          <div class="swiper-slide">
-            <img class="object-contain" src="/src/images/Pictures/pexels-jonathan-borba-3082801.jpg" alt="Obraz">
+          <div class="swiper-slide h-[100vw]">
+            <img class="object-cover" src="/src/images/Pictures/pexels-jonathan-borba-3082801.jpg" alt="Obraz">
           </div>
-          <div class="swiper-slide">
-            <img class="object-contain" src="/src/images/Pictures/pexels-daria-obymaha-1684004.jpg" alt="Obraz2">
+          <div class="swiper-slide h-[100vw]">
+            <img class="object-cover" src="/src/images/Pictures/pexels-daria-obymaha-1684004.jpg" alt="Obraz2">
           </div>
-          <div class="swiper-slide">
-            <img class="object-contain" src="/src/images/Pictures/pexels-dominika-roseclay-2433500.jpg" alt="Obraz3">
+          <div class="swiper-slide h-[100vw]">
+            <img class="object-cover" src="/src/images/Pictures/pexels-dominika-roseclay-2433500.jpg" alt="Obraz3">
           </div>
-          <div class="swiper-slide">
-            <img class="object-contain" src="/src/images/Pictures/pexels-deeana-arts-2565222.jpg" alt="Obraz4">
+          <div class="swiper-slide h-[100vw]">
+            <img class="object-cover" src="/src/images/Pictures/pexels-deeana-arts-2565222.jpg" alt="Obraz4">
           </div>
-          <div class="swiper-slide">
-            <img class="object-contain" src="/src/images/Pictures/pexels-karolina-grabowska-4207905.jpg" alt="Obraz5">
+          <div class="swiper-slide h-[100vw]">
+            <img class="object-cover" src="/src/images/Pictures/pexels-karolina-grabowska-4207905.jpg" alt="Obraz5">
           </div>
         </div>
         <div class="flex flex-row justify-evenly absolute p-5 gap-4 bg-white right-0 bottom-0 z-10">
@@ -134,7 +134,7 @@
         </article>
 
         <article id="ProjektyCard"
-          class="flex flex-col max-w-[23.625rem] px-10 py-12 rounded-[1.75rem] bg-ar-bg-card hover:shadow-xl duration-300 tablet-xl:justify-self-start desktop:justify-self-center opacity-0 blur-sm translate-x-full phone-lg:-translate-x-full phone-lg:delay-200 hover:delay-0">
+          class="flex flex-col max-w-[23.625rem] px-10 py-12 rounded-[1.75rem] bg-ar-bg-card hover:shadow-xl duration-300 tablet-xl:justify-self-start desktop:justify-self-center opacity-0 blur-sm translate-x-full tablet:-translate-x-full phone-lg:delay-200 hover:delay-0">
           <img class="w-10 mb-8" src="src/images/Icons/Pen.svg" alt="card-logo">
           <h3 class="mb-3 text-[1.75rem]">Projekty</h3>
           <p class="mb-16 text-sm">Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem
@@ -203,6 +203,24 @@
       </button>
     </section>
 
+    <div id="gallery-popup" data-img-id="0" class="p-6 hidden fixed -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 w-4/5 h-fit bg-ar-bg-main shadow-2xl z-10">
+      <div class="flex flex-row w-full mb-3 text-2xl">
+        <button id="popup-close" class="mr-auto">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="flex gap-3">
+          <button id="popup-prev">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button id="popup-next">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+      <img class="m-0 w-full aspect-auto" id="popup-image" src="" alt="popup image">
+      <p id="image-description" class="text-center"></p>
+    </div>
+    
     <!-- Contact -->
     <section id="Kontakt" class="flex justify-center mb-8 laptop:mb-[3.75rem]">
       <article class="flex flex-col w-4/5 px-8 py-10 gap-10 text-ar-font-white bg-ar-bg-block tablet:flex-row tablet:items-center tablet:w-5/6 tablet:gap-0 tablet:py-16 tablet-xl:px-14 laptop-lg:px-[6.875rem] laptop-lg:py-[7.5rem] desktop:w-3/4">
@@ -254,52 +272,8 @@
     </nav>
   </footer>
   <script type="module" src="./src/modules/swiper.js"></script>
-  <script type="module">
-    import Masonsry from 'masonry-layout';
-    import apppendGrid from './src/modules/msrGrid.js';
-    import showOnScroll from './src/modules/showOnScroll.ts';
-
-    
-    const showMoreBtn = document.querySelector('.show-more-btn');
-    showMoreBtn.addEventListener('click', async () => {
-      const grid = document.querySelector('.msr-grid');
-      
-      const elems = await apppendGrid();
-      
-      msr.appended(elems);
-
-      if (grid.childElementCount >= 61) {
-        document.querySelector('.gradient').classList.toggle('hidden')
-        showMoreBtn.remove();
-        return;
-      }
-    });
-
-    const searchbar = document.querySelector('#search-Bar');
-    searchbar.addEventListener('focus', () => {
-      const searchBarContainer = document.querySelector('#searchBarContainer');
-
-      searchBarContainer.classList.add('sb-border');
-    });
-
-    searchbar.addEventListener('blur', () => {
-      const searchBarContainer = document.querySelector('#searchBarContainer');
-
-      searchBarContainer.classList.remove('sb-border');
-    });
-    
-    await apppendGrid();
-
-    const msr = new Masonsry('.msr-grid', {
-      itemSelector: '.msr-item',
-      columnWidth: '.msr-sizer',
-      gutter: '.msr-gutter',
-      fitWidth: true
-    });    
-    msr.layout();
-
-    showOnScroll('#ProjektyCard', 'show-card');
-  </script>
+  <script type="module" src="./src/modules/initialize.js"></script>
+  <script src="./src/modules/galleryPopupActions.js"></script>
 </body>
 
 </html>
