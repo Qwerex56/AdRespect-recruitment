@@ -8,6 +8,8 @@ const appendGrid = async () => {
     searchFor: 'garden',
   });
 
+  const newElems = [];
+
   gridItems.forEach((imageUrl) => {
     const gridItem = document.createElement('img');
     
@@ -15,9 +17,11 @@ const appendGrid = async () => {
     gridItem.classList.add('msr-item');
     
     grid.append(gridItem);
+    newElems.push(gridItem);
   });
 
   showOnScroll('.msr-item', 'show-msr-item');
+  return newElems;
 }
 
 export default appendGrid;

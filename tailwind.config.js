@@ -39,6 +39,7 @@ export default {
       }
     },
     screens: {
+      'phone': '515px',
       'phone-lg': '580px',
       'tablet': '680px',
       'tablet-lg': '800px',

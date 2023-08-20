@@ -4,21 +4,23 @@
 @tailwind components;
 
 .msr-sizer {
-  width: 50%;
+  width: 32.8%;
+}
+
+.msr-gutter {
+  width: 0.8%;
 }
 
 .msr-item {
-  --tr-time: 500ms;
-
-  width: 25%;
-  margin-bottom: 10px;
+  width: 32.8%;
+  margin-bottom: 1%;
   
   border-radius: 0.25rem;
   
   opacity: 0;
   filter: blur(5px);
 
-  transition: all 500ms linear !important;
+  transition: all 100ms ease-in;
 }
 
 .msr-item:hover {
@@ -29,6 +31,10 @@
   opacity: 1;
 
   filter: blur(0px);
+}
+
+.sb-border {
+  border: 1px solid #111111 !important;
 }
 
 .show-card {
