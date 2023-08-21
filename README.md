@@ -1,6 +1,8 @@
 # AdRespect-recruitment
 AdRespect-recruitment
 
+***Vite is only used as bundler***
+
 [Link to live site](https://main--stellar-nougat-cc6f01.netlify.app/)
 
 Website made for AdRespect.
