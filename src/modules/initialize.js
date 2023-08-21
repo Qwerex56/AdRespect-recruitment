@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const elems = await apppendGrid();
 
   msr.appended(elems);
+  msr.layout();
 
   showOnScroll("#ProjektyCard", "show-card");
 });
