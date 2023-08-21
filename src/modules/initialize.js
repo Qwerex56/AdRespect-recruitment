@@ -1,7 +1,24 @@
-import Masonsry from 'masonry-layout';
+import Masonry from 'masonry-layout';
 import apppendGrid from './msrGrid.js';
 import showOnScroll from '../modulesTs/showOnScroll.ts';
 import setupSearchbarAction from './searchbarActions.js';
+
+const msr = new Masonry(".msr-grid", {
+  itemSelector: ".msr-item",
+  columnWidth: ".msr-sizer",
+  gutter: ".msr-gutter",
+  fitWidth: true,
+});
+
+document.addEventListener('DOMContentLoaded', async () => {
+  setupSearchbarAction();
+
+  const elems = await apppendGrid();
+
+  msr.appended(elems);
+
+  showOnScroll("#ProjektyCard", "show-card");
+});
 
 const showMoreBtn = document.querySelector('.show-more-btn');
 showMoreBtn.addEventListener('click', async () => {
@@ -17,18 +34,3 @@ showMoreBtn.addEventListener('click', async () => {
     return;
   }
 });
-
-setupSearchbarAction();
-
-await apppendGrid();
-
-const msr = new Masonsry('.msr-grid', {
-  itemSelector: '.msr-item',
-  columnWidth: '.msr-sizer',
-  gutter: '.msr-gutter',
-  fitWidth: true
-});
-
-msr.layout();
-
-showOnScroll('#ProjektyCard', 'show-card');

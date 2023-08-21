@@ -1,5 +1,5 @@
-import getPixabayImages from '../modulesTs/pixabay';
-import showOnScroll from '../modulesTs/showOnScroll';
+import getPixabayImages from '../modulesTs/pixabay.ts';
+import showOnScroll from '../modulesTs/showOnScroll.ts';
 
 const appendGrid = async () => {
   const grid = document.querySelector('.msr-grid');
