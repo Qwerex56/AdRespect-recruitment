@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "@types/masonry-layout": "^4.2.5",
+    "imagesloaded": "^5.0.0",
     "masonry-layout": "^4.2.2",
     "swiper": "^10.1.0"
   }

@@ -45,6 +45,7 @@ export default {
       'tablet-lg': '800px',
       'tablet-xl': '860px',
       'laptop': '990px',
+      'tablet-2xl': '1080px',
       'laptop-lg': '1200px',
       'desktop': '1440px',
     },

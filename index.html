@@ -47,8 +47,8 @@
                 after:absolute after:w-full after:h-[2px] after:rounded-full after:bg-ar-green after:bottom-0 after:left-0 after:scale-0 hover:after:scale-100 after:ease-linear after:duration-100 font-inter"
         href="#Kontakt">Kontakt</a>
       <div id="searchBarContainer" class="group/search-bar max-phone:absolute max-phone:right-4 max-phone:top-6 origin-center inline-flex items-center px-1 py-[.0313rem] max-phone:border-ar-border-black phone:border-transparent border rounded-md hover:border-ar-border-black duration-300">
-        <input type="text" name="searchBar" id="search-Bar" class="max-phone:w-40 w-0 origin-right group-hover/search-bar:w-40 focus:w-40 border-none outline-none duration-300 font-inter">
-        <label for="searchBar" class="group/search-bar">
+        <input type="text" name="searchBarInput" id="search-Bar" class="max-phone:w-40 w-0 origin-right group-hover/search-bar:w-32 focus:w-32 border-none outline-none duration-300 font-inter">
+        <label for="searchBarInput" class="group/search-bar">
           <i class="text-lg  hover:text-ar-green fa-solid fa-magnifying-glass"></i>
         </label>
       </div>
@@ -57,9 +57,9 @@
 
   <main class="relative snap-start">
     <!-- Intro -->
-    <section id="Intro" class="relative flex flex-col bg-ar-beige mb-16 tablet-lg:flex-row tablet-lg:items-center laptop:mb-[7.5rem] laptop-lg:gap-4">
-      <article class="px-8 py-12 tablet:max-w-[80%] tablet-lg:pr-0 laptop:max-w-[50%] laptop-lg:pl-[5.625rem]">
-        <h1 class="laptop:w-4/5 mb-6 text-4xl leading-10 phone-lg:text-5xl laptop:text-6xl laptop:leading-[4.375rem] font-montserrat font-medium">
+    <section id="Intro" class="relative h-fit flex flex-col bg-ar-beige mb-16 tablet-xl:flex-row tablet-xl:items-center laptop:mb-[7.5rem] laptop-lg:gap-4">
+      <article class="px-8 py-12 tablet:max-w-[80%] tablet-lg:pr-0 laptop:max-w-[60%] laptop-lg:pl-[5.625rem]">
+        <h1 class=" mb-6 text-4xl leading-10 phone-lg:text-5xl laptop:text-6xl laptop:leading-[4.375rem] font-montserrat font-medium">
           Nowoczesna aranżacja <br>
           Twojego ogrodu
         </h1>
@@ -77,22 +77,22 @@
           </a>
         </div>
       </article>
-      <div class="h-[100vw] swiper w-full tablet-lg:h-[50vw]">
+      <div class="swiper w-full h-[100vw] tablet-xl:h-fit tablet-2xl:h-full">
         <div class="swiper-wrapper swiper-horizontal">
-          <div class="swiper-slide h-[100vw]">
-            <img class="object-cover" src="/src/images/Pictures/pexels-jonathan-borba-3082801.jpg" alt="Obraz">
+          <div class="swiper-slide">
+            <img class="object-cover tablet-xl:aspect-[3/4] tablet-2xl:aspect-square" src="/src/images/Pictures/pexels-jonathan-borba-3082801.jpg" alt="Obraz">
           </div>
-          <div class="swiper-slide h-[100vw]">
-            <img class="object-cover" src="/src/images/Pictures/pexels-daria-obymaha-1684004.jpg" alt="Obraz2">
+          <div class="swiper-slide">
+            <img class="object-cover tablet-xl:aspect-[3/4] tablet-2xl:aspect-square" src="/src/images/Pictures/pexels-daria-obymaha-1684004.jpg" alt="Obraz2">
           </div>
-          <div class="swiper-slide h-[100vw]">
-            <img class="object-cover" src="/src/images/Pictures/pexels-dominika-roseclay-2433500.jpg" alt="Obraz3">
+          <div class="swiper-slide">
+            <img class="object-cover tablet-xl:aspect-[3/4] tablet-2xl:aspect-square" src="/src/images/Pictures/pexels-dominika-roseclay-2433500.jpg" alt="Obraz3">
           </div>
-          <div class="swiper-slide h-[100vw]">
-            <img class="object-cover" src="/src/images/Pictures/pexels-deeana-arts-2565222.jpg" alt="Obraz4">
+          <div class="swiper-slide">
+            <img class="object-cover tablet-xl:aspect-[3/4] tablet-2xl:aspect-square" src="/src/images/Pictures/pexels-deeana-arts-2565222.jpg" alt="Obraz4">
           </div>
-          <div class="swiper-slide h-[100vw]">
-            <img class="object-cover" src="/src/images/Pictures/pexels-karolina-grabowska-4207905.jpg" alt="Obraz5">
+          <div class="swiper-slide">
+            <img class="object-cover tablet-xl:aspect-[3/4] tablet-2xl:aspect-square" src="/src/images/Pictures/pexels-karolina-grabowska-4207905.jpg" alt="Obraz5">
           </div>
         </div>
         <div class="flex flex-row justify-evenly absolute p-5 gap-4 bg-white right-0 bottom-0 z-10">
@@ -186,8 +186,7 @@
     <section id="Realizacje" class="relative flex flex-col bg-ar-beige px-2 pb-12 pt-[3.75rem] mb-8 laptop:pt-[7.5rem] laptop:mb-[3.75rem]">
       <p class="mb-2 pl-10 text-ar-font-green text-xs laptop:mb-4 laptop-lg:pl-40 font-inter">Realizacje</p>
       <h1 class="mb-12 pl-10 text-ar-font-black text-3xl phone-lg:text-4xl laptop:mb-24 laptop-lg:pl-40 font-montserrat font-medium">Nasze <span class="italic">projekty</span></h1>
-      <div
-        class="msr-grid mx-auto">
+      <div class="msr-grid mx-auto">
         <!-- Images goes here -->
         <div class="msr-sizer"></div>
         <div class="msr-gutter"></div>

@@ -1,4 +1,5 @@
 import Masonry from 'masonry-layout';
+import imagesLoaded from 'imagesloaded';
 import apppendGrid from './msrGrid.js';
 import showOnScroll from '../modulesTs/showOnScroll.ts';
 import setupSearchbarAction from './searchbarActions.js';
@@ -16,7 +17,10 @@ document.addEventListener('DOMContentLoaded', async () => {
   const elems = await apppendGrid();
 
   msr.appended(elems);
-  msr.layout();
+
+  imagesLoaded(document.querySelector('.msr-grid')).on('progress', () => {
+    msr.layout();
+  })
 
   showOnScroll("#ProjektyCard", "show-card");
 });
